@@ -1,0 +1,12 @@
+#svg {
+  height: 80vh;
+  width: 100%;
+  margin-top: 100px;
+}
+path {
+  fill: #bbb;
+}
+path:hover {
+  fill: lightcoral;
+  cursor: pointer;
+}

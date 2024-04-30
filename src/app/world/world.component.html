@@ -1,0 +1,22 @@
+<header>
+  <h1>World Map</h1>
+</header>
+<div class="container">
+
+  <div class="link">
+    <a class="map" href="/map">Link</a>
+  </div>
+  
+  <section id="map-column">
+    <app-svg-map></app-svg-map>
+  </section>
+  
+  <section id="map-data-column" class="info">
+    <p>Country: <span *ngIf="countryInfo">{{countryInfo.name}}</span> </p>
+    <p>Capital: <span *ngIf="countryInfo">{{countryInfo.capitalCity}}</span> </p>
+    <p>Region: <span *ngIf="countryInfo">{{countryInfo.region.value}}</span> </p>
+    <p>Income Level: <span *ngIf="countryInfo">{{countryInfo.incomeLevel.value}}</span> </p>
+    <p>Latitude: <span *ngIf="countryInfo">{{countryInfo.latitude}}</span></p>
+    <p>Longitude: <span *ngIf="countryInfo">{{countryInfo.longitude}}</span></p>
+  </section>
+</div>
